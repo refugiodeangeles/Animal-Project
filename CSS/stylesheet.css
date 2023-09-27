@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.pat{
+    width: 10%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFDE59;
+    font-family: 'Kalam', cursive;
+}
+header{
+    width: 100%;
+    height: 35vh;
+    padding: 10px 0 10px 0;
+    background: #76401E;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/free-photo/small-finches-perching-on-green-leaf-branch-generated-by-ai_188544-53673.jpg?w=1380&t=st=1695805590~exp=1695806190~hmac=c0db8d340e940438b27030844412f93a632241150ccea835f11609c7591107ce);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    font-family: SketchRockwell;
+    color: #FFDE59;
+}
+header > *{
+    padding: 5px 0 5px 0;
+}
+.user_img{
+    width: 5%;
+    height: 50%;
+    background: #76401E;
+    border-radius: 50%;
+    display: flex;
+    background-image: url(https://img.freepik.com/foto-gratis/primer-plano-petirrojo-europeo-pie-sobre-rama-luz-sol_181624-32034.jpg?w=1380&t=st=1695805799~exp=1695806399~hmac=d46013cffcd2159c9b522dcd177aa14f122bca2fa9c12988418e65e210ae9ba3);
+    background-position: center center;
+    background-size: 150%;
+}
+nav{
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    background: #76401E;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+nav div{
+    width: 25%;
+    height: 100%;
+    padding: 2px;
+    text-align: center;
+    background: #FFDE59;
+    color: #76401E;
+    transition: .25s ease-in-out;
+}
+nav div:hover{
+    background: #76401E;
+    color: #FFDE59;
+    cursor: pointer;
+}
+.main_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+main{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text_content{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2px;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.text_content > div{
+    width: 33%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFDE59;
+    color: #76401E;
+    transition: .25s ease-in-out;
+    border: #76401E 2px solid;
+    border-radius: 2px;
+}
+.text_content > div:hover{
+    background: #76401E;
+    color: #FFDE59;
+    cursor: pointer;
+}
+.text_content > div > *{
+    padding: 0 5px 0 5px;
+}
+main input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    height: 35vh;
+    border: #76401E 2px solid;
+    border-radius: 3px;
+    color: grey;
+    outline: none;
+    transition: all .25s ease-in-out;
+    text-transform: none;
+    font-family: 'Kalam', cursive;
+}
+main input:focus{
+    border: #76401E 5px solid;
+}
+main input::placeholder{
+    text-align: center;
+}
+aside{
+    width: 40%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.fotos{
+    width: 100%;
+    height: 10%;
+    color: #76401E;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.main_content{
+    width: 100%;
+    height: 88%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.main_content div{
+    border: 2px solid #76401E;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 2px;
+    background-size: 100%;
+}
+.box1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url(https://www.irondogline.com/thumbnail?oid=639df6eb10834b0419ee9749);
+    background-position: center;
+}
+.box2{
+    background-image: url(https://zooby.by/components/com_djclassifieds/images/item/19757_screenshot_6569_thb.jpg);
+    background-position: center;
+}
+.box3{
+    grid-column: 4/6;
+    grid-row: 1/3;
+    background-image: url(https://youth.md/wp-content/uploads/2022/10/The-personalities-of-animal-owners-are-reflected-in-their-pets-1.jpg);
+}
+.box4{
+    background-image: url(https://sun9-3.userapi.com/c9560/u106097318/-7/x_7cd9a0c8.jpg);
+    background-position: center;
+}
+.box5{
+    grid-column: 4/6;
+    grid-row: 3/5;
+    background-image: url(https://images.house-friend.org/porady/1578102/opiekunka_dla_kota_-_jak_wybra_odpowiedni_-_.jpg.webp);
+}
+.box6{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    background-image: url(https://vetpractice.com.sg/wp-content/uploads/2018/10/bottom-img1.jpg);
+}
+.box7{
+    background-image: url(https://cache3.youla.io/files/images/orig/5c/cb/5ccb13f8de8854231f5f7a96.jpg);
+}
+.box8{
+    background-image: url(https://sun9-33.userapi.com/impg/aCIoMQQSYgXj2I7s87-IS7uXRMVct_zp6gVBwQ/11uMtJwrVpQ.jpg?size=403x604&quality=95&sign=5e58acc644302dc6527ebd2b42486833&c_uniq_tag=c1-zg5G3cWzsHzYQ7fG8vRhSDvU3_S8F8A3L0SdpZMQ&type=album);
+    background-position: center;
+}
+
+@media (max-width: 2560px) {
+    .user_img{
+        width: 15%;
+        height: 75%;
+    }
+}
+@media (max-width: 1024px) {
+    .user_img{
+        width: 15%;
+        height: 55%;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        margin-top: 131px;
+    }
+    .main_content{
+        height: 193%;
+    }
+}
+@media (max-width: 790px) {
+    header{
+        align-content: center;
+        justify-content: center;
+    }
+    .user_img{
+        width: 15%;
+        height: 35%;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        margin-top: 75px;
+    }
+    .main_content{
+        height: 151%;
+    }
+}
+@media (max-width: 720px) {
+    header{
+        height: 15%;
+    }
+    .user_img{
+        width: 5vh;
+        height: 5vh;
+    }
+    nav{
+        height: 15%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav > div{
+        height: 100%;
+        width: 50%;
+    }
+    main{
+        width: 100%;
+    }
+    .text_content:first-child{
+        font-size: 13px;
+    }
+    aside{
+        width: 100%;
+        margin-top: -15px;
+    }
+    .fotos{
+        margin: 15px 0 5px 0;
+    }
+    .main_content{
+        height: 73%;
+    }
+}
+@media (max-width: 385px) {
+    nav{
+        height: 15%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav > div{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@font-face {
+    font-family: SketchRockwell;
+    src: url(../Fonts/SketchRockwell-Bold.ttf);
+}
