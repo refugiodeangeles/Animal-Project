@@ -3,11 +3,10 @@ window.addEventListener('DOMContentLoaded',()=>{
     const nameInput = document.querySelector('#name');
     const emailInput = document.querySelector('#email');
     const ccInput = document.querySelector('#cc');
-    const commentText = document.querySelector('#comments');
+    const commentText = document.querySelector('#lastName');
     const sendButton = document.querySelector('.disableButton');
     const blurDiv = document.querySelector('.blurBody');
     const divLoader = document.querySelector('.divLoader');
-    const sendDiv = document.querySelector('.sendSucefully');
     const regEx = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     const validationObject = {
         email: "",
@@ -16,6 +15,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     };
     // -----
     // Variables
+    var pagina=""
     let validation;
     let inputValue = () =>{
         if(nameInput.value != '' && emailInput.value != '' && ccInput.value != '' && regEx.test(emailInput.value) && regEx.test(ccInput.value)){
@@ -67,10 +67,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 sendButton.classList.add('disableButton');
                 sendButton.setAttribute('disabled','true');
                 setTimeout(()=>{
-                    sendDiv.style.display = "flex";
-                    setTimeout(()=>{
-                        sendDiv.style.display = "none";
-                    },3500)
+                    window.open("/Mains/logged.html");
                 })
             },3000)
         }

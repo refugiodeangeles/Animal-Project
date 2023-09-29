@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-<title>Document</title>
-    <link rel='stylesheet' href='CSS/stylesheet.css' />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;600;900&display=swap' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/014126d435.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='./CSS/style.css' />
 </head>
+
 <body>
-    <div class="pat_img"><img class="pat" src="images/Logo 4.png" alt="Patita"></div>
     <header>
-        <h1>¡Bienvenido!</h1>
-        <div class="user_img">
-        </div>
-        <div>
-            <h1>UserName</h1>
-        </div>
+        <h1>Registrate ya!</h1>
+        <img src="../images/Logo 4.png" alt="">
     </header>
-    <nav>
-        <div>Notificaciones <i class="fa-solid fa-envelope"></i></div>
-        <div>chat <i class="fa-solid fa-comments"></i></div>
-        <div>Configuraciones <i class="fa-solid fa-wrench"></i></div>
-        <div>Blog <i class="fa-solid fa-book"></i></div>
-    </nav>
-    <div class="main_div">
-        <main>
-            <div class="text_content">
-                <div>foto/video <i class="fa-solid fa-camera"></i></div>
-                <div>tip <i class="fa-solid fa-clipboard"></i></div>
-                <div>adopcion <i class="fa-solid fa-hand-holding-heart"></i></div>
+    <div class="blurBody">
+        <form action="">
+            <div>
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" name="name" placeholder="Dime tu nombre ♥">
             </div>
-            <input type="text" name="comentario" id="comentario" placeholder="escribe lo que estas pensando...">
-        </main>
-        <aside>
-            <div class="fotos">fotos</div>
-            <div class="main_content">
-                <div class="box1"></div>
-                <div class="box2"></div>
-                <div class="box3"></div>
-                <div class="box4"></div>
-                <div class="box5"></div>
-                <div class="box6"></div>
-                <div class="box7"></div>
-                <div class="box8"></div>
+            <div>
+                <label for="lastName">Apellido:</label>
+                <input id="lastName" type="text" name="lastName" placeholder="Apellido aqui, por favor">
             </div>
-        </aside>
+            <div>
+                <label for="email">*Email:</label>
+                <input id="email" type="email" name="name" placeholder="Pon tu email aqui">
+            </div>
+            <div>
+                <label for="cc">Confirmar Email:</label>
+                <input id="cc" type="email" name="name" placeholder="Pon el mismo Email, por favor">
+            </div>
+            <div id="buttonDiv">
+                <button type="submit" class="disableButton" disabled="true"><i class="fa-solid fa-paper-plane"></i>Iniciar Sesion</button>
+                <button type="reset" class="reset"><i class="fa-solid fa-eraser"></i>Limpiar</button>
+            </div>
+        </form>
     </div>
-    <script src='index.js'></script>
+    <div class="divLoader">
+        <span class="loader"></span>
+    </div>
+    <script src='Js/index.js'></script>
 </body>
-</html> 
+
+</html>
