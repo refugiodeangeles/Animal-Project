@@ -67,11 +67,10 @@ window.addEventListener('DOMContentLoaded',()=>{
                 sendButton.classList.add('disableButton');
                 sendButton.setAttribute('disabled','true');
                 setTimeout(()=>{
-                    window.location.href = "../Mains/logged.html";
+                    window.location.href = "logged.html";
                 })
             },3000)
         }
-        /* if(validationObject == ) */
     });
     // -----
     // Fuctions
