@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 sendButton.classList.add('disableButton');
                 sendButton.setAttribute('disabled','true');
                 setTimeout(()=>{
-                    window.location.href = "/Mains/logged.html";
+                    window.location.href = "../Mains/logged.html";
                 })
             },3000)
         }
