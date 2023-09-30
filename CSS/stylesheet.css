@@ -134,7 +134,7 @@ main input{
     transition: all .25s ease-in-out;
     text-transform: none;
     display: flex;
-    text-align: left;
+    text-align: center;
 }
 main input:focus{
     border: #76401E 5px solid;

@@ -134,11 +134,12 @@ form .disableButton {
 }
 .blurBody{
     width: 100%;
-    margin: 15px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: blur(0px);
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .divLoader{
     width: 100%;
@@ -181,7 +182,7 @@ header{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin: 5px 0 15px 0;
 }
 header h1{
     width: 100%;
@@ -196,13 +197,13 @@ header img{
   
 @keyframes animloader {
     0% {
-        box-shadow: 20px 0 rgba(255, 255, 255, 0.25), 40px 0 #76401E, 60px 0 #76401E;
+        box-shadow: 20px 0 rgba(255, 255, 255, 0.25), 40px 0 #c56b33, 60px 0 #c56b33;
     }
     50% {
-        box-shadow: 20px 0 #76401E, 40px 0 rgba(255, 255, 255, 0.25), 60px 0 #76401E;
+        box-shadow: 20px 0 #c56b33, 40px 0 rgba(255, 255, 255, 0.25), 60px 0 #c56b33;
     }
     100% {
-        box-shadow: 20px 0 #76401E, 40px 0 #76401E, 60px 0 rgba(255, 255, 255, 0.25);
+        box-shadow: 20px 0 #c56b33, 40px 0 #c56b33, 60px 0 rgba(255, 255, 255, 0.25);
     }
 }
 @media (min-width: 2560px) {

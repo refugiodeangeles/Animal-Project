@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded',()=>{
     // Const
-    const nameInput = document.querySelector('#name');
+    const nameInput = document.querySelector('#nombre');
     const emailInput = document.querySelector('#email');
     const ccInput = document.querySelector('#cc');
-    const commentText = document.querySelector('#lastName');
+    const commentText = document.querySelector('#apellido');
     const sendButton = document.querySelector('.disableButton');
     const blurDiv = document.querySelector('.blurBody');
     const divLoader = document.querySelector('.divLoader');
@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded',()=>{
     };
     // -----
     // Variables
-    var pagina=""
     let validation;
     let inputValue = () =>{
         if(nameInput.value != '' && emailInput.value != '' && ccInput.value != '' && regEx.test(emailInput.value) && regEx.test(ccInput.value)){
@@ -29,7 +28,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     let validateInput = inputName =>{
         inputName.addEventListener('input',e => {
             if(e.target.value == ''){
-                e.target.placeholder = `The ${e.target.id} are required`;
+                e.target.placeholder = `El ${e.target.id} es requerido`;
                 inputName.classList.add('required');
             }
             if (regEx.test(e.target.value)) {
@@ -40,7 +39,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 if(!e.target.parentElement.querySelector(".wrongValue") && e.target.type == "email"){
                     const divElement = document.createElement("div");
                     divElement.classList.add('wrongValue');
-                    divElement.textContent = "Please, enter a valid email";
+                    divElement.textContent = "Ingresa un email valido, por favor";
                     e.target.parentElement.appendChild(divElement);
                     return;
                 } 
@@ -48,6 +47,12 @@ window.addEventListener('DOMContentLoaded',()=>{
             inputValue();
             let arrayOfValues = Object.values(validationObject);
             validation = arrayOfValues.some(element=>{element == ''})
+          })
+          commentText.addEventListener('input',e => {
+            if(e.target.value == ''){
+                e.target.placeholder = `El ${e.target.id} es requerido`;
+                commentText.classList.add('required');
+            }
           })
     };
     // -----
