@@ -48,7 +48,7 @@ header::before{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.55;
     z-index: -1;
 }
 header > *{
@@ -63,6 +63,7 @@ header > *{
     background-image: url(https://p2.piqsels.com/preview/410/150/539/robin-bird-fat-red.jpg);
     background-position: center center;
     background-size: cover;
+    border: #76401E 5px solid;
 }
 nav{
     width: 100%;
