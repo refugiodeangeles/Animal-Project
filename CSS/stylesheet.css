@@ -29,17 +29,27 @@ header{
     width: 100%;
     height: 35vh;
     padding: 10px 0 10px 0;
-    background: #76401E;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(https://img.freepik.com/free-photo/small-finches-perching-on-green-leaf-branch-generated-by-ai_188544-53673.jpg?w=1380&t=st=1695805590~exp=1695806190~hmac=c0db8d340e940438b27030844412f93a632241150ccea835f11609c7591107ce);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: SketchRockwell;
     color: #FFDE59;
+}
+header::before{
+    content: "";
+    background-image: url(https://images4.alphacoders.com/686/686592.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -1;
 }
 header > *{
     padding: 5px 0 5px 0;
@@ -50,7 +60,7 @@ header > *{
     background: #76401E;
     border-radius: 50%;
     display: flex;
-    background-image: url(https://img.freepik.com/foto-gratis/primer-plano-petirrojo-europeo-pie-sobre-rama-luz-sol_181624-32034.jpg?w=1380&t=st=1695805799~exp=1695806399~hmac=d46013cffcd2159c9b522dcd177aa14f122bca2fa9c12988418e65e210ae9ba3);
+    background-image: url(https://p2.piqsels.com/preview/410/150/539/robin-bird-fat-red.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -236,6 +246,9 @@ aside{
     }
     aside{
         width: 100%;
+    }
+    .text_content{
+        height: 15%;
     }
     .main_content{
         height: 70vh;
